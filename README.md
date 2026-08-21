@@ -46,3 +46,6 @@ npm run lint
 ## Публикация
 
 Локальный проект подготовлен как статическая витрина без серверной обработки персональных данных. Workflow GitHub Pages публикует production-артефакт из `dist-pages`, собранный отдельной Vite-конфигурацией для подпути репозитория.
+
+- Репозиторий: https://github.com/ya-yura/massage-studio-krasnodar
+- Демо: https://ya-yura.github.io/massage-studio-krasnodar/
