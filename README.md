@@ -13,6 +13,7 @@ Production-проверка:
 
 ```bash
 npm run build
+npm run build:pages
 npm test
 npm run lint
 ```
@@ -44,4 +45,4 @@ npm run lint
 
 ## Публикация
 
-Локальный проект подготовлен как статическая витрина без серверной обработки персональных данных. Workflow GitHub Pages публикует production-артефакт из `dist/client`.
+Локальный проект подготовлен как статическая витрина без серверной обработки персональных данных. Workflow GitHub Pages публикует production-артефакт из `dist-pages`, собранный отдельной Vite-конфигурацией для подпути репозитория.
