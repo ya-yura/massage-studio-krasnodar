@@ -29,6 +29,12 @@ jobs:
         run: npm ci
       - name: Build static site
         run: npm run build
+      - name: Flatten repository base path artifact
+        run: |
+          if [ -d dist/client/massage-studio-krasnodar ]; then
+            cp -R dist/client/massage-studio-krasnodar/. dist/client/
+            rm -rf dist/client/massage-studio-krasnodar
+          fi
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
